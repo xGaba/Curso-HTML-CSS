@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Curso HTML</title>
+
+    <style> 
+        table, th, td { 
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr> <!--Table row-->
+                <th style="width: 500px;">Producto</th>
+                <th style="width: 200px;">Precio</th>
+            </tr>
+        </thead>    
+        <tbody>
+            <tr>
+                <td>Gojira - Fortitude (LP)</td> <!--EL std dentro de nuestras celdas-->
+                <td>21.99€</td>
+            </tr>
+            <tr>
+                <td>Surface Keyboard</td>
+                <td>113.53€</td>
+            </tr>
+            <tr>
+                <td>Electric Callboy - Tekkno</td>
+                <td>22.99€</td>
+            </tr>
+            <tr>
+                <td>Big Fudge Fundas Exteriores para Discos de Vinilo - 30cm x 50uds</td>
+                <td>18.59€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 177.10€</td>
+        </tfoot>
+    </table>
+
+    <!--ul es Lista no ordenada / li es List Item / ol es Ordered list-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <ol>
+        <li value="10">Elemento 1</li> <!--Podemos marcar desde donde empezamos la lista-->
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol style="list-style-type: upper-roman">
+                <li>subelemento 1</li>
+                <li>subelemento 2</li>
+                <li>subelemento 3</li>
+                <li>subelemento 4</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+    <form action="/formulario" method="get">
+        <label for="nombre">Nombre: </label>
+        <input value="Eren" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <br>
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input value="Gaba" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <br>
+        <!--Rows: filas; Cols: columnas; Value: Valor predefinido-->
+        <label for="comentario">Comentario</label><br>
+        <textarea rows="15" cols="50"  id="comentario" placeholder="Ingrese comentario"
+        name="comentario">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+        <!--Type: button_botón pendiente de JS para definir función/reset_Resetea valores predefinidos/submit_envía formulario-->
+
+
+        <!--<input type="submit"> Aquí enviamos nuestro formulario, que especificaremos donde con el atributo action en la etiqueta form, method para poder enviar los datos a nuestro servidor (GET/enviará los valores dentro de los campos a través de la url(max url.length 255crctrs) y POST/enviará los datos sin ocuparlos en la url)-->
+    </form>
+<!--Haciendo coincidir for e id hacemos que al pinchar en Nombre de manera errónea, igualmente el foco se dirija al input
+Con type, lo que hacemos es agregar un atributo para que el input se comporte de forma diferente, por ejemplo si le decimos que email, si no agregamos un email con un @ nos dará error. O password, donde ocultará lo que estemos escribiendo.
+El type predefinido en el que tenemos el input siempre que no digamos lo contrario siempre será text
+Otros type: 
+Radio, convertirá el input en un botón redondo a marcar. 
+Checkbox, que lo convierte en una casilla de check.
+File, que nos permitirá agregar un archivo-->
+
+
+    <h1>Este es mi primer heading</h1>
+    <h2>Este es mi segundo heading</h2>
+    <h3>Este es mi tercer heading</h3>
+    <h4>Este es mi cuarto heading</h4>
+    <h5>Este es mi quinto heading</h5>
+    <h6>Este es mi sexto heading</h6>
+    <hr style="color: blue;"> 
+    <p>
+        Este es el primer párrafo de la web en la que estamos trabajando. Pensando que este minicurso en YT sirva para algo.
+    </p>
+    <p>
+        Este sería el segundo párrafo, con una nueva etiqueta
+    </p>
+    <p> <!--Esdta etiqueta es silenciosa, no se muestra en la web-->
+        Este texto lo utilizaré para referenciar a las <span style=" color:blue">etiquetas de span!</span>. Que se utiliza para:
+        <br>Referenciar texto en otras etiquetas.
+    </p>
+  
+
+    <img src="Lofi.jpg" height="400">
+    <!--Si solo marcamos el width, mantiene el ratio entre altura y anchura en la imagen-->
+
+  
+    
+    <br>
+    <a target="_blank" href="http://www.vidaextra.com">
+        Ir a Vidaextra
+    </a>
+  <!--<a> (ancor) Es la etiqueta de hipervínculo.
+    Si le agregamos la propiedad de target=_blank Cuando pinchemos en el link se nos cargará en una pestaña nueva-->
+    
+
+
+
+
+
+
+    <!--Esta es la etiqueta de comentario, y no aparecerá en el explorador-->
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+</head>
+<body>
+
+<!--No usaremos id en diferentes etiquetas como atributo, puesto que tiene que ser único. Para darle forma, ya sea con JS o CSS a varias etiquetas a la vez, usaremos el atributo class. Llamaremos las diferentes clases desde CSS utilizando los selectores-->
+    <header>
+        <h1 id="titulo">Blog de Xavi</h1>
+    </header> 
+    <!--Para agrupar links, logo, etc. Podemos crear tantas como queramos pero no podemos crear una dentro de otra, ni dentro de una etiqueta de footer-->
+
+    <div>
+        <p>[Soy un párrafo dentro de un div.]</p>
+    </div>
+
+    <section>
+        <article class="post"><!--Para definir contenido independiente-->
+            <h2>Los subnormales en el trabajo</h2>
+            <p>Repasamos los diferentes perfiles de gente que, abiertamente y sin miedo al fracaso, son subnormales y lo demuestran día a día en tu ambiente de trabajo</p>
+            <img src="monos.jpg" width="500">
+            <p>Aquí iría el texto del artículo, diferenciando a toda la amalgama de tóxicos que pululan por toda empresa española media que se precie. Deberíamos pasar por grupos como: las chismosas, las brujas, los tóxicos, los aduladores, los acosadores, los pesados, los estridentes, los frikis, los pasotas, los subnormales, etc.</p>
+        </article>
+        <article class="post">
+            <h2>Título del post 2</h2>
+            <p>Descripción del post 2</p>
+            <img src="Lofi.jpg" width="300">
+            <p>Texto del post 2</p>
+        </article>
+    </section>
+    <!--para definir secciones dentro de la aplicación-->
+
+    <footer>
+        <a href="#titulo">Ir al inicio</a><br>
+        <a href="mailto: xaviergaba@gmail.com">Contáctame aquí</a>
+        <p>Copyright 2024</p>
+    </footer>
+    <!--Pie de página. Podemos tener múltiples, usualmente para datos de contacto, el copyright de la app, links, etc.-->
+</body>
+</html>

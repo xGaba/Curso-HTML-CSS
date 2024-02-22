@@ -1,0 +1,101 @@
+/* ORDEN DE EJECUCIÓN: SIEMPRE HACIA ABAJO. Por lo que lo que ejecutemos en último lugar se aplicará a todo lo anterior */
+
+#titulo { 
+    color: tomato;
+}
+/* Para referenciar id, usamos la almohadilla y el nombre a referir */
+
+p.texto { 
+    color:slateblue;
+}
+/* Para referenciar class, usamos el . y el nombre a referir 
+Podemos también añadir antes del texto la etiqueta donde buscaremos la palabra referida */
+
+p.especial {
+    color:green;
+}
+
+div p { /* Quiere decir: En todas las etiquetas de div, que tengan hijos p, aplica este style */
+    color: aquamarine;
+}
+
+div h2, div h3 { /* Así asignamos a más de una etiqueta */ 
+    color: brown;
+}
+
+* { /* Selector universal, aplica las props siempre que no esten definidas por otro selector */
+    font-size: 24px;
+    color: black;
+}
+
+.color {
+    /* border: 5px red groove; */
+    /*
+        dotted
+        dashed
+        solid
+        double
+            groove   [Estos pueden asignarse a elementos tridimensionales]
+            ridge
+            inset
+            outset
+        none
+        hidden
+
+    */
+
+    border-style: groove;
+    border-color: blueviolet;
+    border-radius: 5px;
+    border-width: 1em;
+    text-align: center;
+
+}
+
+/* Presionando CTRL+SPACE podemos ver todos los colores que podemos seleccionar. Podemos elegir colores también usando las convenciones de RGB, hexagesimal y valores HSL
+
+color: #ff0000;
+
+HEXAGESIMAL lo seleccionaremos escribiendo primero un # y 3 o 6 caracteres, siendo 0 (negro) la ausencia de color y f (blanco) la mayor expresión del color.
+
+Si utilizamos los 3 caracteres, el primer dígito representa el ROJO (#f00), el segundo el VERDE (#0f0) y el tercero el AZUL (#00f).
+
+Si escribimos el mismo caracter, será un gris de mayor o menor intensidad dependiendo los caracteres.
+
+Si utilizamos 6 caracteres, los dividimos en "paquetitos" de 2.
+
+color: rgb (0, 100, 100);
+
+RGB funciona similar, pero seleccionando valores entre el 0 y el 255, siendo el primer valor representante del rojo, el segundo del verde y el tercero del azul.
+
+*/
+
+#fondo {
+    background-color: rgba(0, 100, 100); /* aplha: opacidad al color  */
+    /* opacity: 0.3; opacidad al elemento completo */
+    height: 200px;
+    background-image: url(Lofi.jpg);
+    background-repeat: repeat-y;
+    background-position: center top;
+    background: #ff003f url(Lofi.jpg) repeat-y center top / 100px 100px;
+    background-size: 200px 200px; /* ancho x alto */
+
+}
+
+.margen {
+    background-color: darkkhaki;
+    margin: 25px 25px; /* Espacio fuera del elemento */
+    padding: 15px 15px 50px; /* Espacio dentro del elemento */
+    border: solid 1px black; /* Posiciona entre margin y padding */
+    height: 50px;
+    width: 50px;
+    overflow: scroll;
+    outline: 5px solid blue;
+}
+
+.text {
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 2px gray; /* Mov.H, Mov.V, blur, color */
+    
+}
