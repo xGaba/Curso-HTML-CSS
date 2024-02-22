@@ -23,10 +23,10 @@ div h2, div h3 { /* Así asignamos a más de una etiqueta */
     color: brown;
 }
 
-* { /* Selector universal, aplica las props siempre que no esten definidas por otro selector */
+/* { /* Selector universal, aplica las props siempre que no esten definidas por otro selector 
     font-size: 24px;
     color: black;
-}
+}*/
 
 .color {
     /* border: 5px red groove; */
@@ -97,5 +97,107 @@ RGB funciona similar, pero seleccionando valores entre el 0 y el 255, siendo el 
     text-align: center;
     text-decoration: overline;
     text-shadow: 3px 5px 2px gray; /* Mov.H, Mov.V, blur, color */
-    
+    font-family: 'Kode mono';
+}
+
+a:link { /* Seleccionar cuando el link no ha sido visitado */
+    color: lime;
+}
+
+a:visited{ /* Props cuando el link ha sido visitado */
+    color: gray;
+}
+
+a:hover{ /* Props cuando tienes el mouse encima del link */
+    color: red
+}
+
+a:active{ /* Props cuando estás clicando activamente en el link */
+    color: blue;
+}
+
+/* Es súmamente importante el orden en el que se personalizan los links:
+   -link   -visited   -hover   -active */
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian;
+    list-style-position: inside;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px greenyellow;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even){ /* Even para impares; Odd para pares */
+    background-color: darkseagreen;
+}
+
+tr:hover { /* Acción al pasar el cursor por encima */
+    background-color: green;
+    cursor: pointer; /* Icono de la manita al pasar el cursor por encima */
+}
+
+span {
+    display: block; /* El elemento ocupará el ancho de la ventana */
+    /* visibility: hidden; */
+
+    max-width: 300px;
+    background-color: grey;
+}
+
+.inline{
+    display: inline; /* El elemento ocupará en mínimo indispensable */
+}
+
+#position {
+    position: fixed; /* Se mantiene la posición con todo el documento, aun haciendo scroll */
+    position: sticky;
+    left: 20px;
+}
+
+.left {
+    float: left; /* Toma el elemento y dentro de la etiqueta de html en el que se encuentra lo hará flotar (en este caso hacia la izquierda) */
+    width: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+
+.column {
+    margin: 0 0;
+    padding: 10px 0;
+    width: 33%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 175px;
+    background-color: aqua;
+}
+
+.center {
+    padding: 50px 0; /* centrado en un block grande */
+    width: 200px;
+    margin: 0 auto; /* centrado con respecto a page */
+    background-color: aquamarine;
+    text-align: center; /* centrado con respeceto a block */
 }
